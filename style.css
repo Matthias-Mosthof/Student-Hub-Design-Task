@@ -1,0 +1,203 @@
+/*General Styling */
+
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-color-one: #6a1cc3;
+  --primary-color-two: #8849cf;
+  --secondary-color: rgba(0, 0, 0, 0.6);
+  --accent-color-one: rgba(75, 20, 138, 0.38);
+
+  --font-prim: Source Sans Pro;
+  --font-sec: Montserrat;
+}
+
+html {
+  max-width: 600px;
+  margin-inline: auto;
+}
+
+article {
+  margin-inline: 2rem;
+}
+
+/*Specific Styling*/
+
+/*Top Bar*/
+
+.menu {
+  position: absolute;
+  left: 39;
+  top: 38px;
+}
+
+header {
+  color: white;
+  text-align: center;
+  font-family: var(--font-sec);
+  position: relative;
+}
+
+.content {
+  background-color: var(--primary-color-one);
+  padding-block: 1rem;
+}
+.arrow {
+  height: 30px;
+  background-color: var(--primary-color-one);
+  clip-path: polygon(0 0, 100% 0, 100% 15%, 50% 100%, 0 15%);
+}
+
+.arrow-shadow {
+  position: absolute;
+  background-color: var(--primary-color-two);
+  z-index: -1;
+  bottom: -5px;
+  width: 100%;
+}
+
+/*Upper Area (Students) */
+
+.heading2 {
+  color: var(--primary-color-one);
+  font-family: var(--font-prim);
+}
+
+.subline1 {
+  color: var(--secondary-color);
+  font-family: var(--font-prim);
+  font-size: 1.3rem;
+  font-weight: 800px;
+}
+
+/* Input Feld */
+
+.dd-container {
+  margin-block: 2rem;
+  display: flex;
+  position: relative;
+}
+
+.input-wrapper {
+  max-width: 540px;
+  position: relative;
+  margin-inline: auto;
+}
+
+.input-search {
+  width: 100%;
+  height: 3rem;
+  border: 3px solid var(--primary-color-one);
+}
+
+.description {
+  position: absolute;
+  left: 10px;
+  top: 35%;
+  font-family: var(--font-sec);
+  color: var(--accent-color-one);
+}
+
+.icon {
+  position: absolute;
+  right: 1.5rem;
+  top: 11px;
+  width: 1.5rem;
+}
+
+/*Dropdown Menüs*/
+
+#class,
+#time {
+  border: 3px solid var(--primary-color-one);
+  padding-block: 0.9rem;
+  color: var(--primary-color-one);
+  font-size: 1.3rem;
+  margin-inline: auto;
+  padding-inline: 2rem;
+  font-weight: 600;
+}
+
+#time {
+  padding-inline: 2rem;
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0.294) 140px,
+    var(--primary-color-one) 140px
+  );
+  background-size: cover;
+}
+
+#class {
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0.294) 250px,
+    var(--primary-color-one) 250px
+  );
+}
+
+.test {
+  position: absolute;
+  top: 1.5rem;
+  right: 1.4rem;
+  z-index: 1;
+  width: 15px;
+}
+
+.test2 {
+  position: absolute;
+  top: 1.5rem;
+  right: 14.4rem;
+  z-index: 1;
+  width: 15px;
+}
+
+/*Lower Area (Git Hub Karten) */
+
+.card {
+  border: 2px solid var(--primary-color-one);
+  margin-bottom: 2rem;
+  box-shadow: 6px 4px var(--primary-color-one);
+  padding-left: 1rem;
+  line-height: 1.5rem;
+  padding-block: 1rem;
+  display: flex;
+  color: var(--primary-color-one);
+  font-family: var(--font-prim);
+  font-weight: 600;
+  font-size: 20px;
+  position: relative;
+  _margin-inline: 2rem;
+}
+
+.card-container {
+  margin-left: 6rem;
+}
+
+.bi {
+  width: 4rem;
+  height: 4rem;
+  margin-right: 1rem;
+  background-color: var(--primary-color-two);
+  padding-inline: 10px;
+  fill: white;
+  border-radius: 10px;
+  position: absolute;
+  top: 1.5rem;
+}
+
+.github {
+  text-decoration: none;
+  color: var(--primary-color-two);
+  font-size: 1.1rem;
+  font-family: var(--font-prim);
+  font-weight: 400;
+  text-decoration: underline;
+}
+
+.subline2 {
+  font-family: var(--font-sec);
+  color: var(--secondary-color);
+}
